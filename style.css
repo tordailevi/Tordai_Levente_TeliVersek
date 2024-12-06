@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(kepek/hatter.jpg);
+    background-size: cover;
+    width:80%;
+    max-width: 1000px;
+    margin:auto;
+}
+
+header{
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    height: 130px;
+    background-image: url(kepek/fejlec.jpg);
+    padding-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#tarolo{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-areas: 
+    "n a as"
+    "f f f";
+    gap:10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0px;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 5px;
+}
+
+nav li{
+    text-align: center;
+    list-style-type: none;
+    border: 1px solid rgb(17, 136, 216);
+    background-color: rgb(17, 136, 216);
+    border-radius: 15px;
+    padding: 10px;
+    width:150px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+}
+
+#kepek1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    padding-bottom: 100px;
+}
+
+#kepek_balra{
+    padding: 5px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    rotate: -10deg;
+    box-shadow: 5px 10px #cab9b9;
+}
+
+#kepek_jobbra{
+    padding: 5px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    rotate: 10deg;
+    box-shadow: 5px 10px #cab9b9;
+}
+
+#kepek2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+p{
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+header{
+    grid-area: h;
+}
+
+nav{
+    grid-area: n;
+}
+
+article{
+    grid-area: a;
+}
+
+aside{
+    padding: 0px;
+    grid-area: as;
+    padding-left: 10px;
+    border-left: 1px solid black;
+    border-radius: 15px;
+}
+#linkgomb{
+    color:purple;
+    text-decoration: underline;
+}
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid rgb(72, 165, 196);
+}
+
+.noborder{
+    border: none;
+}
+
+th {
+    background-color: rgb(86, 213, 255);
+}
+
+.keksor{
+    background-color: rgb(101, 208, 243);
+}
+
+.vers{
+    font-size: 18px;
+    text-align: justify;
+}
+
+footer{
+    padding: 15px;
+    grid-area: f;
+    background-color: rgb(17, 136, 216);
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width:650px){
+    body{
+        width:100%;
+    }
+    #tarolo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "a"
+        "as"
+        "f";
+        gap:5px;
+        margin:0px;
+    }
+    article{
+        padding: 10px;
+    }
+    aside{
+        padding:10px;
+    }
+    img{
+        width:100%;
+    }
+}
